@@ -1,0 +1,99 @@
+/* Design tokens. Palette: warm near-black with a single accent (Frameshelf #d97757). */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/InterVariable.woff2') format('woff2');
+}
+
+:root {
+  /* Color */
+  --bg: #0b0a09;
+  --bg-raised: #100f0e;
+  --surface-1: #161514;
+  --surface-2: #1d1c1a;
+  --surface-3: #262422;
+  --surface-4: #302e2b;
+  --line-1: rgb(255 244 232 / 0.07);
+  --line-2: rgb(255 244 232 / 0.12);
+  --line-3: rgb(255 244 232 / 0.2);
+  --ink-1: #f5f2ee;
+  --ink-2: #b9b4ae;
+  --ink-3: #a39d97;
+  --accent: #d97757;
+  --accent-hover: #e48b6d;
+  --accent-ink: #1d100a;
+  --accent-text: #e9906f;
+  --accent-soft: rgb(217 119 87 / 0.13);
+  --accent-line: rgb(217 119 87 / 0.45);
+  --positive: #8fcfa4;
+  --focus: #f0a283;
+
+  /* Typography */
+  --font-sans: 'Inter', 'Segoe UI Variable Text', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Mono', 'SF Mono', Consolas, monospace;
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.3125rem);
+  --display-1: clamp(2.35rem, 1.15rem + 4.4vw, 5.125rem);
+  --display-2: clamp(2rem, 1.25rem + 2.5vw, 3.375rem);
+  --display-3: clamp(1.5rem, 1.2rem + 1.2vw, 2.125rem);
+  --leading-display: 1.05;
+  --leading-heading: 1.15;
+  --leading-body: 1.6;
+  --tracking-display: -0.035em;
+  --tracking-heading: -0.03em;
+  --tracking-label: 0.08em;
+  --measure: 62ch;
+
+  /* Spacing: Strict 4pt/8pt Baseline Grid (ui-spacing-system) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+  --space-11: 80px;
+  --space-12: 96px;
+  --section-y: clamp(56px, 5vw, 88px);
+  --gutter: clamp(16px, 3.5vw, 32px);
+  --container: 1200px;
+  --container-wide: 1320px;
+  --header-h: 64px;
+
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* Depth */
+  --shadow-1: inset 0 1px 0 rgb(255 255 255 / 0.05), 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-2: inset 0 1px 0 rgb(255 255 255 / 0.06), 0 12px 32px -12px rgb(0 0 0 / 0.6);
+  --shadow-3: 0 0 0 1px var(--line-2), 0 40px 100px -30px rgb(0 0 0 / 0.85), 0 18px 40px -20px rgb(0 0 0 / 0.6);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-press: cubic-bezier(0.3, 0, 0.2, 1);
+  --dur-1: 120ms;
+  --dur-2: 220ms;
+  --dur-3: 560ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-1: 0ms;
+    --dur-2: 0ms;
+    --dur-3: 0ms;
+  }
+}

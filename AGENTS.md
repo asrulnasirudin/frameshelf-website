@@ -1,6 +1,6 @@
 # FRAMESHELF LANDING PAGE: agent instructions
 
-Website · Windows · no host application · stack: Node.js + TypeScript, Static HTML/CSS/JS · state: New project
+Website · Windows · no host application · stack: React + TypeScript + Vite, Plain CSS, Static Prerendered HTML · state: Local draft
 
 ## Startup sequence (every new session)
 1. Read this file, `PROJECT_SPEC.md`, `.agent/MEMORY.md`, `.agent/CHECKPOINT.md`, `.agent/PLANS.md`.
@@ -20,45 +20,50 @@ Website · Windows · no host application · stack: Node.js + TypeScript, Static
 Precedence if they disagree: `PROJECT_SPEC.md` > `.agent/DECISIONS.md` > `.agent/CHECKPOINT.md` > `.agent/MEMORY.md`. Safety rules in this file always apply.
 
 ## Folder map
-- `src/`: Product source code.
-- `tests/`: Automated tests.
-- `build/`: Intermediate build output. Created by build tools; safe to delete. (created by tooling later)
-- `dist/`: Final deliverables. Created by build/packaging tools. (created by tooling later)
+- `src/`: Product source code (`components/`, `config/`, `data/`, `hooks/`, `lib/`, `styles/`).
+- `public/`: Static assets copied under Vite `BASE_URL` (`brand/`, `fonts/`, `media/`, `og-image.png`).
+- `scripts/`: Build-time prerender (`prerender.mjs`) and asset generation helpers.
+- `tests/`: Automated unit tests (`node:test`).
+- `build/`: Intermediate SSR build output (cleaned after prerender).
+- `dist/`: Final static deliverables uploaded by GitHub Pages workflow.
+- `.github/workflows/`: Manual GitHub Pages deployment workflow (`pages.yml`).
 - `docs/user/`: End-user documentation.
-- `docs/developer/`: Maintainer documentation: architecture, conventions, how it is built.
-- `assets/`: Images, fonts and media used by the site.
+- `docs/developer/`: Maintainer documentation (`sitemap.md`, `configuration.md`, `claims-ledger.md`).
+- `assets/`: Reserved scaffold folder.
 - `.agent/`: AI orchestration: memory, checkpoint, plans, decisions, QA.
 - `local/`: Local-only working material. Git-ignored; never committed.
-- `.project.json`: machine-readable project descriptor (no secrets)
+- `.project.json`: machine-readable project descriptor (no secrets).
 
 ## Commands
-```
-# npm install   (ask before running)
+```bash
+# npm ci        (ask before adding new dependencies)
+npm run typecheck
 npm run lint
-# npm test
-# npm run build
+npm test
+npm run build
+npm run preview
 ```
 Verify: run the checks above, then `python .agent/check.py`, and `python .agent/safety_check.py` before any commit, then walk `.agent/QA_CHECKLIST.md`.
-Never install dependencies or run installers without approval.
+Never install new dependencies or run installers without approval.
 
 ## Conventions
 - Follow the startup sequence in this file before changing anything.
 - Keep this file short; put detail in linked documents.
 - Record notable changes in root `CHANGELOG.md` under `## [Unreleased]`, using only relevant Added, Changed, Deprecated, Removed, Fixed, or Security sections. Keep entries concise and user-facing.
 - For each actual version release, move pending changes into `## [MAJOR.MINOR.PATCH] - YYYY-MM-DD`, newest first; retain an empty Unreleased section. Follow Semantic Versioning, preserve earlier history, and skip release entries when nothing changed. Never invent releases, dates, or changes.
-- Match `docs/developer/sitemap.md`; change it before adding pages.
-- Semantic HTML first; every image has alt text.
-- No hard-coded drive letters or backslash paths; build paths with the language's path API.
+- Match `docs/developer/sitemap.md`; change it before adding pages or sections.
+- Verify every product capability against `docs/developer/claims-ledger.md`.
+- Semantic HTML first; every content image has alt text.
+- No hard-coded drive letters or backslash paths; build paths with the language's path API or `asset()`.
 - TypeScript strict mode; no `any` without a comment explaining why.
-- No build step unless `.agent/DECISIONS.md` records why one is needed.
 - Update `.agent/CHECKPOINT.md` at every clean checkpoint, not mid-task.
 - Record why a significant decision was made in `.agent/DECISIONS.md`.
 - Put detail in `.agent/context/` and link to it from here.
-- Heavy production files live in `local/production-assets/`; track only small, required assets in `assets/`.
+- Heavy production originals live in `local/production-assets/`; track only web-optimized assets in `public/`.
 
 ## Don'ts
 - Never read, print, copy or commit secrets (keys, tokens, passwords, `.env`, credentials).
-- Never put secrets or private personal data into any document, including notes written for other agents.
+- Never put secrets or private personal data into any document, including notes written for other agents (only the owner-approved public contact email in `src/config/site.ts` is permitted).
 - Ask before deleting files, adding dependencies, installing anything, or changing the folder structure.
 - Never edit a protected path (listed below) without explicit approval.
 - Never commit or push unless `git.commit_policy` in `.project.json` allows it; recommend a checkpoint instead.

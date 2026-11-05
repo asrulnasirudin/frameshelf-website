@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+<!-- Lightbox desk base -->
+<rect width="960" height="540" fill="#141312"/>
+
+<!-- Illuminated drawing vellum area -->
+<rect x="24" y="20" width="912" height="466" rx="4" fill="#1a1917" stroke="#2a2825" stroke-width="1"/>
+
+<!-- 12-Field Animation Guide Grid (Non-repro Cyan) -->
+<g stroke="#263b4a" stroke-width="0.8">
+  <rect x="72" y="46" width="816" height="400" fill="none" stroke="#2e485a" stroke-width="1.2"/>
+  <rect x="140" y="80" width="680" height="332" fill="none" stroke-dasharray="3 4"/>
+  <rect x="208" y="114" width="544" height="264" fill="none" stroke-dasharray="3 4"/>
+  <path d="M465 246H495 M480 231V261" stroke="#3d637c" stroke-width="1.2"/>
+  <path d="M72 46L92 66 M888 46L868 66 M72 446L92 426 M888 446L868 426" stroke="#2e485a" stroke-width="1"/>
+  <path d="M276 242V250 M344 242V250 M412 242V250 M548 242V250 M616 242V250 M684 242V250" stroke="#2e485a"/>
+</g>
+
+<!-- ACME Registration Peg Bar along bottom -->
+<rect x="24" y="492" width="912" height="38" fill="#100f0e" stroke="#23211f" stroke-width="1"/>
+<circle cx="480" cy="511" r="7" fill="#090807" stroke="#302d2a" stroke-width="1.2"/>
+<rect x="210" y="505" width="28" height="12" rx="6" fill="#090807" stroke="#302d2a" stroke-width="1.2"/>
+<rect x="722" y="505" width="28" height="12" rx="6" fill="#090807" stroke="#302d2a" stroke-width="1.2"/>
+<text x="480" y="525" text-anchor="middle" fill="#4d4740" font-family="ui-monospace, monospace" font-size="7.5" letter-spacing="1.5">ACME STANDARD REGISTRATION</text>
+
+<!-- Production Exposure Sheet Stamping -->
+<g font-family="ui-monospace, 'Cascadia Mono', 'SF Mono', monospace">
+  <text x="80" y="38" fill="#3a5b70" font-size="10" letter-spacing="1.5">12 FIELD · SAFETY GRID</text>
+  <text x="880" y="38" text-anchor="end" fill="#5c564e" font-size="9" letter-spacing="1.5">STUDY REF · 3D STAR TURNAROUND · 24 FPS</text>
+  <text x="880" y="70" text-anchor="end" fill="#d97757" font-size="12" font-weight="600" letter-spacing="0.5">FR 002 / 036</text>
+  <text x="880" y="86" text-anchor="end" fill="#6e685f" font-size="9" letter-spacing="1">TURNAROUND · 010°</text>
+</g>
+
+<!-- Orbital rotation trajectory guides -->
+<ellipse cx="480" cy="270" rx="120.0" ry="33.6" fill="none" stroke="#2e4d61" stroke-width="1.2" stroke-dasharray="3 4"/>
+<ellipse cx="480" cy="270" rx="48.0" ry="13.4" fill="none" stroke="#243845" stroke-width="0.9" stroke-dasharray="2 3"/>
+
+<!-- Center rotation axis line -->
+<line x1="480" y1="80" x2="480" y2="460" stroke="#3d637c" stroke-width="1" stroke-dasharray="4 4"/>
+<circle cx="480" cy="270" r="3" fill="#d97757"/>
+
+<!-- Ground contact shadow of rotating star -->
+<ellipse cx="480" cy="445" rx="95.5" ry="9" fill="#070605" opacity="0.32"/>
+
+<!-- Rendered 3D Faceted Star (Depth sorted) -->
+<g>
+  <polygon points="475.1,270 592.4,232.9 525.0,284.8" fill="#54321d" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="475.1,270 507.8,231.2 592.4,232.9" fill="#6e4428" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="475.1,270 525.0,284.8 549.5,367.1" fill="#6e4428" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="475.1,270 549.5,367.1 480.0,318.0" fill="#54321d" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="475.1,270 480.0,150.0 507.8,231.2" fill="#54321d" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="475.1,270 452.2,231.2 480.0,150.0" fill="#d97757" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="475.1,270 480.0,318.0 410.5,367.1" fill="#d97757" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="475.1,270 410.5,367.1 435.0,284.8" fill="#ba5637" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="475.1,270 367.6,232.9 452.2,231.2" fill="#ba5637" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="484.9,270 592.4,232.9 525.0,284.8" fill="#ba5637" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="475.1,270 435.0,284.8 367.6,232.9" fill="#ba5637" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="484.9,270 507.8,231.2 592.4,232.9" fill="#ba5637" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="484.9,270 525.0,284.8 549.5,367.1" fill="#ba5637" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="484.9,270 549.5,367.1 480.0,318.0" fill="#d97757" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="484.9,270 480.0,150.0 507.8,231.2" fill="#d97757" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="484.9,270 452.2,231.2 480.0,150.0" fill="#e07a5f" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="484.9,270 480.0,318.0 410.5,367.1" fill="#e07a5f" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="484.9,270 410.5,367.1 435.0,284.8" fill="#f7b05b" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="484.9,270 367.6,232.9 452.2,231.2" fill="#f7b05b" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+  <polygon points="484.9,270 435.0,284.8 367.6,232.9" fill="#e07a5f" stroke="#24140d" stroke-width="0.8" stroke-linejoin="round"/>
+</g>
+
+<!-- Compass angle indicator ring in lower corner -->
+<g transform="translate(140, 390)">
+  <circle cx="0" cy="0" r="32" fill="#141312" stroke="#2a4254" stroke-width="1"/>
+  <circle cx="0" cy="0" r="2" fill="#d97757"/>
+  <line x1="0" y1="0" x2="5.2" y2="-29.5" stroke="#f09678" stroke-width="2" stroke-linecap="round"/>
+  <text x="0" y="46" text-anchor="middle" fill="#6e685f" font-family="ui-monospace, monospace" font-size="9">10° DEG</text>
+</g>
+</svg>

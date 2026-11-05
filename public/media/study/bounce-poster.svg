@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540"><!-- Lightbox desk base -->
+<rect width="960" height="540" fill="#141312"/>
+
+<!-- Illuminated drawing vellum area -->
+<rect x="24" y="20" width="912" height="466" rx="4" fill="#1a1917" stroke="#2a2825" stroke-width="1"/>
+
+<!-- 12-Field Animation Guide Grid (Non-repro Cyan) -->
+<g stroke="#263b4a" stroke-width="0.8">
+  <!-- Outer 12-field boundary -->
+  <rect x="72" y="46" width="816" height="400" fill="none" stroke="#2e485a" stroke-width="1.2"/>
+  <!-- 10-field safety -->
+  <rect x="140" y="80" width="680" height="332" fill="none" stroke-dasharray="3 4"/>
+  <!-- 8-field safety -->
+  <rect x="208" y="114" width="544" height="264" fill="none" stroke-dasharray="3 4"/>
+  <!-- Center crosshair -->
+  <path d="M465 246H495 M480 231V261" stroke="#3d637c" stroke-width="1.2"/>
+  <!-- Corner registration ticks -->
+  <path d="M72 46L92 66 M888 46L868 66 M72 446L92 426 M888 446L868 426" stroke="#2e485a" stroke-width="1"/>
+  <!-- Field ruler ticks along center axis -->
+  <path d="M276 242V250 M344 242V250 M412 242V250 M548 242V250 M616 242V250 M684 242V250" stroke="#2e485a"/>
+</g>
+
+<!-- Ground baseline with technical drafting ticks -->
+<path d="M72 430H888" stroke="#365469" stroke-width="1.5"/>
+<g stroke="#243845" stroke-width="1">
+  <path d="M120 430l-5 8 M200 430l-5 8 M280 430l-5 8 M360 430l-5 8 M440 430l-5 8 M520 430l-5 8 M600 430l-5 8 M680 430l-5 8 M760 430l-5 8 M840 430l-5 8"/>
+</g>
+
+<!-- Arc trajectory guide in cyan non-repro pencil -->
+<path d="M140.0 110.8 L160.9 116.1 L181.6 125.2 L202.0 140.3 L222.3 161.3 L242.3 187.5 L262.2 219.4 L281.8 257.1 L301.2 300.6 L320.4 349.9 L339.3 408.2 L358.0 364.1 L376.5 328.0 L394.8 296.7 L412.8 270.0 L430.6 247.6 L448.1 230.1 L465.4 217.4 L482.4 209.8 L499.1 207.2 L515.6 209.7 L531.8 217.2 L547.7 229.8 L563.4 247.3 L578.7 269.7 L593.8 296.7 L608.6 328.0 L623.0 364.1 L637.1 408.2 L650.9 376.8 L664.4 352.5 L677.5 332.5 L690.2 316.7 L702.6 305.4 L714.5 298.4 L726.1 296.0 L737.2 298.2 L747.9 305.0 L758.1 316.4 L767.8 332.1 L777.0 352.1 L785.6 376.4 L793.6 408.2 L800.9 381.4 L807.4 367.0 L813.0 361.4 L817.4 366.7 L820.0 378.6" fill="none" stroke="#2e4d61" stroke-width="1.2" stroke-dasharray="3 4"/>
+
+<!-- ACME Registration Peg Bar along bottom -->
+<rect x="24" y="492" width="912" height="38" fill="#100f0e" stroke="#23211f" stroke-width="1"/>
+<!-- Center circular peg hole -->
+<circle cx="480" cy="511" r="7" fill="#090807" stroke="#302d2a" stroke-width="1.2"/>
+<!-- Left oblong peg hole -->
+<rect x="210" y="505" width="28" height="12" rx="6" fill="#090807" stroke="#302d2a" stroke-width="1.2"/>
+<!-- Right oblong peg hole -->
+<rect x="722" y="505" width="28" height="12" rx="6" fill="#090807" stroke="#302d2a" stroke-width="1.2"/>
+<text x="480" y="525" text-anchor="middle" fill="#4d4740" font-family="ui-monospace, monospace" font-size="7.5" letter-spacing="1.5">ACME STANDARD REGISTRATION</text>
+
+<!-- Production Exposure Sheet Stamping -->
+<g font-family="ui-monospace, 'Cascadia Mono', 'SF Mono', monospace">
+  <text x="80" y="38" fill="#3a5b70" font-size="10" letter-spacing="1.5">12 FIELD · SAFETY GRID</text>
+  <text x="880" y="38" text-anchor="end" fill="#5c564e" font-size="9" letter-spacing="1.5">STUDY REF · BOUNCE TEST · 24 FPS</text>
+  <text x="880" y="70" text-anchor="end" fill="#d97757" font-size="12" font-weight="600" letter-spacing="0.5">FR 020 / 048</text>
+  <text x="880" y="86" text-anchor="end" fill="#6e685f" font-size="9" letter-spacing="1">KEY · APEX 01</text>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="140.0" cy="433" rx="11.4" ry="5" fill="#070605" opacity="0.081"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(140.0, 110.8) rotate(7.9)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="35.0" ry="29.2" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -7.0 -29.2 A 35.0 29.2 0 0 1 28.0 17.5 A 29.8 24.8 0 0 1 -7.0 -29.2 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-9.8" cy="-8.8" rx="11.2" ry="6.4" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="35.0" ry="29.2" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="202.0" cy="433" rx="14.7" ry="5" fill="#070605" opacity="0.123"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(202.0, 140.3) rotate(40.5)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="39.7" ry="25.8" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -7.9 -25.8 A 39.7 25.8 0 0 1 31.8 15.5 A 33.8 21.9 0 0 1 -7.9 -25.8 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-11.1" cy="-7.7" rx="12.7" ry="5.7" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="39.7" ry="25.8" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="262.2" cy="433" rx="24.6" ry="5" fill="#070605" opacity="0.250"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(262.2, 219.4) rotate(60.5)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="41.0" ry="25.0" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -8.2 -25.0 A 41.0 25.0 0 0 1 32.8 15.0 A 34.8 21.3 0 0 1 -8.2 -25.0 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-11.5" cy="-7.5" rx="13.1" ry="5.5" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="41.0" ry="25.0" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="320.4" cy="433" rx="41.0" ry="5" fill="#070605" opacity="0.461"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(320.4, 349.9) rotate(69.9)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="41.0" ry="25.0" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -8.2 -25.0 A 41.0 25.0 0 0 1 32.8 15.0 A 34.8 21.3 0 0 1 -8.2 -25.0 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-11.5" cy="-7.5" rx="13.1" ry="5.5" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="41.0" ry="25.0" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="376.5" cy="433" rx="38.3" ry="5" fill="#070605" opacity="0.425"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(376.5, 328.0) rotate(-61.4)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="41.0" ry="25.0" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -8.2 -25.0 A 41.0 25.0 0 0 1 32.8 15.0 A 34.8 21.3 0 0 1 -8.2 -25.0 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-11.5" cy="-7.5" rx="13.1" ry="5.5" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="41.0" ry="25.0" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="430.6" cy="433" rx="28.2" ry="5" fill="#070605" opacity="0.297"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(430.6, 247.6) rotate(-47.5)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="39.5" ry="25.9" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -7.9 -25.9 A 39.5 25.9 0 0 1 31.6 15.5 A 33.6 22.0 0 0 1 -7.9 -25.9 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-11.1" cy="-7.8" rx="12.6" ry="5.7" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="39.5" ry="25.9" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="482.4" cy="433" rx="23.7" ry="5" fill="#070605" opacity="0.238"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(482.4, 209.8) rotate(-15.9)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="37.1" ry="27.6" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -7.4 -27.6 A 37.1 27.6 0 0 1 29.6 16.6 A 31.5 23.5 0 0 1 -7.4 -27.6 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-10.4" cy="-8.3" rx="11.9" ry="6.1" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="37.1" ry="27.6" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="531.8" cy="433" rx="24.6" ry="5" fill="#070605" opacity="0.250"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(531.8, 217.2) rotate(30.9)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="37.4" ry="27.4" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -7.5 -27.4 A 37.4 27.4 0 0 1 29.9 16.4 A 31.8 23.3 0 0 1 -7.5 -27.4 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-10.5" cy="-8.2" rx="12.0" ry="6.0" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="37.4" ry="27.4" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="578.7" cy="433" rx="31.0" ry="5" fill="#070605" opacity="0.332"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(578.7, 269.7) rotate(57.7)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="40.2" ry="25.5" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -8.0 -25.5 A 40.2 25.5 0 0 1 32.2 15.3 A 34.2 21.7 0 0 1 -8.0 -25.5 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-11.3" cy="-7.6" rx="12.9" ry="5.6" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="40.2" ry="25.5" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="623.0" cy="433" rx="42.8" ry="5" fill="#070605" opacity="0.484"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(623.0, 364.1) rotate(69.7)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="41.0" ry="25.0" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -8.2 -25.0 A 41.0 25.0 0 0 1 32.8 15.0 A 34.8 21.3 0 0 1 -8.2 -25.0 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-11.5" cy="-7.5" rx="13.1" ry="5.5" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="41.0" ry="25.0" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="664.4" cy="433" rx="41.5" ry="5" fill="#070605" opacity="0.467"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(664.4, 352.5) rotate(-58.2)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="39.3" ry="26.1" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -7.9 -26.1 A 39.3 26.1 0 0 1 31.4 15.6 A 33.4 22.2 0 0 1 -7.9 -26.1 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-11.0" cy="-7.8" rx="12.6" ry="5.7" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="39.3" ry="26.1" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="702.6" cy="433" rx="35.8" ry="5" fill="#070605" opacity="0.394"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(702.6, 305.4) rotate(-35.2)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="36.3" ry="28.2" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -7.3 -28.2 A 36.3 28.2 0 0 1 29.0 16.9 A 30.8 24.0 0 0 1 -7.3 -28.2 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-10.2" cy="-8.5" rx="11.6" ry="6.2" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="36.3" ry="28.2" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="737.2" cy="433" rx="35.0" ry="5" fill="#070605" opacity="0.384"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(737.2, 298.2) rotate(21.4)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="35.4" ry="28.9" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -7.1 -28.9 A 35.4 28.9 0 0 1 28.3 17.4 A 30.1 24.6 0 0 1 -7.1 -28.9 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-9.9" cy="-8.7" rx="11.3" ry="6.4" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="35.4" ry="28.9" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="767.8" cy="433" rx="39.1" ry="5" fill="#070605" opacity="0.436"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(767.8, 332.1) rotate(61.1)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="37.6" ry="27.2" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -7.5 -27.2 A 37.6 27.2 0 0 1 30.1 16.3 A 32.0 23.1 0 0 1 -7.5 -27.2 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-10.5" cy="-8.2" rx="12.0" ry="6.0" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="37.6" ry="27.2" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="793.6" cy="433" rx="48.0" ry="5" fill="#070605" opacity="0.550"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(793.6, 408.2) rotate(0.0)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="43.2" ry="21.8" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -8.6 -21.8 A 43.2 21.8 0 0 1 34.6 13.1 A 36.7 18.5 0 0 1 -8.6 -21.8 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-12.1" cy="-6.5" rx="13.8" ry="4.8" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="43.2" ry="21.8" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="0.18">
+  <!-- Ground contact shadow -->
+  <ellipse cx="813.0" cy="433" rx="43.2" ry="5" fill="#070605" opacity="0.489"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(813.0, 361.4) rotate(0.0)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="33.4" ry="30.6" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -6.7 -30.6 A 33.4 30.6 0 0 1 26.8 18.4 A 28.4 26.0 0 0 1 -6.7 -30.6 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-9.4" cy="-9.2" rx="10.7" ry="6.7" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="33.4" ry="30.6" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g><g opacity="1">
+  <!-- Ground contact shadow -->
+  <ellipse cx="499.1" cy="433" rx="23.4" ry="5" fill="#070605" opacity="0.235"/>
+  
+  <!-- Ball volume with dynamic tangent rotation -->
+  <g transform="translate(499.1, 207.2) rotate(0.0)">
+    <!-- Volume core fill -->
+    <ellipse cx="0" cy="0" rx="36.8" ry="27.8" fill="#d97757"/>
+    <!-- Form shadow cel tier -->
+    <path d="M -7.4 -27.8 A 36.8 27.8 0 0 1 29.4 16.7 A 31.3 23.7 0 0 1 -7.4 -27.8 Z" fill="#b05436" opacity="0.6"/>
+    <!-- Chalk specular highlight -->
+    <ellipse cx="-10.3" cy="-8.4" rx="11.8" ry="6.1" fill="#f9cfbe" opacity="0.85"/>
+    <!-- Pencil graphite contour stroke -->
+    <ellipse cx="0" cy="0" rx="36.8" ry="27.8" fill="none" stroke="#2a160f" stroke-width="2.4"/>
+  </g>
+</g></svg>

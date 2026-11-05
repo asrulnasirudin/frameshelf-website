@@ -9,25 +9,26 @@ Durable context a new agent should know without chat history. Target: under 150 
 
 ## Product identity
 - Name: FRAMESHELF LANDING PAGE
-- Description (entered at setup): A landing page for Frameshelf. A place to intro it to the public.
+- Subject: Public marketing site and browser simulation for **Frameshelf**, a local-first visual reference library for videos and images on Windows (currently in unsigned internal beta).
 
-## Established at setup (confirmed by the owner when the project was created)
-- Category: Website
-- Platform(s): Windows
-- Host application: none
-- Technology stack: Node.js + TypeScript, Static HTML/CSS/JS
-- Distribution: No packaged release yet
-- AI tools: Antigravity (Gemini), Claude Code, Codex
-- Git workflow: simple
+## Established setup & stack
+- Standalone website repository, kept strictly separate from the private Frameshelf Electron repository so GitHub Free Pages can publish without exposing desktop source code.
+- Stack: React 19 + strict TypeScript + Vite 7 + plain CSS custom-property tokens + build-time `react-dom/server` prerender (`scripts/prerender.mjs`).
+- Subpath-safe asset resolution via `asset()` (`src/lib/asset.ts`) and `SITE_BASE` (defaults to `/frameshelf-landing-page/`).
 
-## Confirmed product principles
--
-
-## Terminology
--
+## Confirmed product principles & terminology
+- **Shelves**: folders registered in the library without moving or modifying source media.
+- **Projects**: local groupings of Shelves.
+- **Boards, tags, Favourites**: personal organization tools.
+- **Studio**: desktop playback workspace with single-frame stepping, timecode, session-only In/Out range looping, and private **Moments** / frame annotations.
+- **Review Rooms**: optional collaboration through a user-configured shared folder; sharing is always reviewed and confirmed, never automatic cloud sync.
+- Do not claim Compare, AI tagging, infinite moodboard canvas, cloud sync, Mac/Linux support, open-source licensing, or public installer downloads unless newly shipped and owner-approved.
 
 ## Owner preferences that affect development
--
+- Visual direction inspired by WhisperBar: warm dark canvas (`#0b0a09`), generous spacing, strong display typography with deliberate breaks, concise calm copy, single brand accent (`#d97757` from Flow FS mark), restrained CSS motion.
+- Original generated sample media (`src/data/sampleLibrary.ts`) designed to be swapped easily without touching UI components.
+- Outbound destinations and release stage live only in `src/config/site.ts`; unapproved destinations stay `null`.
 
 ## Rejected approaches (and why)
--
+- Tailwind, component libraries, animation libraries, backends, databases, and analytics/trackers (excluded by owner brief for maintainability, performance, and privacy).
+- Presenting ordinary HTML `<video>` browser seeking as frame-accurate desktop playback (Study mode uses a discrete 48-frame SVG image sequence instead).
