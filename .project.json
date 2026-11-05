@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "name": "FRAMESHELF LANDING PAGE",
+  "slug": "frameshelf-landing-page",
+  "description": "A landing page for Frameshelf. A place to intro it to the public.",
+  "category": "website",
+  "platforms": [
+    {
+      "id": "windows"
+    }
+  ],
+  "targets": [],
+  "stack": [
+    "node_typescript",
+    "static_html"
+  ],
+  "stack_status": "chosen",
+  "state": "new",
+  "layout": {
+    "roles": {
+      "source": {
+        "path": "src",
+        "origin": "scaffolded"
+      },
+      "tests": {
+        "path": "tests",
+        "origin": "scaffolded"
+      },
+      "build": {
+        "path": "build",
+        "origin": "tool_created"
+      },
+      "dist": {
+        "path": "dist",
+        "origin": "tool_created"
+      },
+      "docs_user": {
+        "path": "docs/user",
+        "origin": "scaffolded"
+      },
+      "docs_dev": {
+        "path": "docs/developer",
+        "origin": "scaffolded"
+      },
+      "assets": {
+        "path": "assets",
+        "origin": "scaffolded"
+      },
+      "ai": {
+        "path": ".agent",
+        "origin": "scaffolded"
+      },
+      "local": {
+        "path": "local",
+        "origin": "scaffolded"
+      }
+    },
+    "protected_paths": []
+  },
+  "toolchain": {
+    "node": ">=22.13"
+  },
+  "git": {
+    "enabled": true,
+    "default_branch": "main",
+    "workflow": "simple",
+    "branch_creation": "manual",
+    "worktrees": "optional",
+    "commit_policy": "ask"
+  },
+  "security": {
+    "secrets": "never_commit",
+    "local_only": [
+      "local/"
+    ],
+    "secret_patterns": [
+      ".env",
+      ".env.*",
+      "*.pem",
+      "*.key",
+      "*.pfx",
+      "*.p12",
+      "config.local.*"
+    ],
+    "generated": [
+      "build/",
+      "dist/",
+      ".DS_Store",
+      "Thumbs.db",
+      "*.log",
+      ".idea/",
+      ".vscode/"
+    ],
+    "large_file_warn_mb": 5,
+    "watch_patterns": [
+      "credentials.*",
+      "secrets.*",
+      "*.aep",
+      "*.prproj",
+      "*.psb",
+      "*.mov",
+      "*.mp4",
+      "*.mxf",
+      "*.wav",
+      "*.exr"
+    ]
+  },
+  "features": {
+    "local_assets": true,
+    "sensitive_config": true,
+    "user_testing": false
+  },
+  "references": [],
+  "development": {
+    "ai": [
+      "antigravity",
+      "claude_code",
+      "codex"
+    ]
+  },
+  "distribution": {
+    "enabled": false
+  },
+  "profiles": {
+    "format": 1,
+    "layers": [
+      {
+        "kind": "base",
+        "id": "base",
+        "version": "1"
+      },
+      {
+        "kind": "category",
+        "id": "website",
+        "version": "1"
+      },
+      {
+        "kind": "platform",
+        "id": "windows",
+        "version": "1"
+      },
+      {
+        "kind": "stack",
+        "id": "node_typescript",
+        "version": "1"
+      },
+      {
+        "kind": "stack",
+        "id": "static_html",
+        "version": "1"
+      },
+      {
+        "kind": "state",
+        "id": "new",
+        "version": "1"
+      },
+      {
+        "kind": "ai",
+        "id": "agent_workspace",
+        "version": "1",
+        "implied": true
+      },
+      {
+        "kind": "ai",
+        "id": "antigravity",
+        "version": "1"
+      },
+      {
+        "kind": "ai",
+        "id": "claude_code",
+        "version": "1"
+      },
+      {
+        "kind": "ai",
+        "id": "codex",
+        "version": "1"
+      },
+      {
+        "kind": "distribution",
+        "id": "none",
+        "version": "1"
+      },
+      {
+        "kind": "feature",
+        "id": "local_assets",
+        "version": "1"
+      },
+      {
+        "kind": "feature",
+        "id": "sensitive_config",
+        "version": "1"
+      }
+    ]
+  },
+  "answer_source": {
+    "name": "user",
+    "folder": "default",
+    "location": "user",
+    "description": "user",
+    "category": "user",
+    "platform": "user",
+    "target": "default",
+    "stack": "user",
+    "state": "default",
+    "ai": "user",
+    "distribution": "user",
+    "features": "user",
+    "git": "user",
+    "git_workflow": "user",
+    "first_commit": "user"
+  },
+  "scaffold": {
+    "tool_version": "2.0",
+    "created": "2026-11-04",
+    "managed_files": [
+      {
+        "path": ".agent/CHECKPOINT.md",
+        "template": "v2/agent-checkpoint.md",
+        "sha256": "6d03fad36763f8375ed41e050f6456ebdc2d2cbe97eda3dfde14ddda59104f3c"
+      },
+      {
+        "path": ".agent/CODEX.md",
+        "template": "v2/agent-codex.md",
+        "sha256": "746bf5b57639e8f2fa5a56dbbaccda575f92c18f114bc3cd1f7cc544a12ea944"
+      },
+      {
+        "path": ".agent/DECISIONS.md",
+        "template": "v2/agent-decisions.md",
+        "sha256": "70dec6964ec2ac11897f1c8479cd22c80b98f4adfe3323c125a99c120c081d06"
+      },
+      {
+        "path": ".agent/MEMORY.md",
+        "template": "v2/agent-memory.md",
+        "sha256": "f61e3bd60166d34e8bf441c8b04b60eeb5a8d4ef5f7fa7dfe8b864019f61cfd8"
+      },
+      {
+        "path": ".agent/PLANS.md",
+        "template": "v2/agent-plans.md",
+        "sha256": "4349d6346e3d2b50bb186b23ea8ff1b22281c99b1986a3448cd4d6f0009fad06"
+      },
+      {
+        "path": ".agent/QA_CHECKLIST.md",
+        "template": "v2/agent-qa.md",
+        "sha256": "a2067d5be78c3e5b2024eb773e23ccf1a1493fd603d7f3dcd715b4b6e3495257"
+      },
+      {
+        "path": ".agent/check.py",
+        "template": "v2/agent-check.py.tpl",
+        "sha256": "478b48bb00ed066bee08e27e9d140d59f4cebba93aa6ab2ac6f7580c76298e9d"
+      },
+      {
+        "path": ".agent/context/README.md",
+        "template": "v2/agent-context.md",
+        "sha256": "fc9fbf0ff509e99878bcdf5ef4f2ed8aa1d4135222c3a7c234ab479a8842cb49"
+      },
+      {
+        "path": ".agent/phases/README.md",
+        "template": "v2/agent-phases.md",
+        "sha256": "c5a83e256bfd67ad714bfb3f967560a9630b98823de3b5a2886bb6f09f8a8380"
+      },
+      {
+        "path": ".agent/reviews/README.md",
+        "template": "v2/agent-reviews.md",
+        "sha256": "877eb0b9d5a2bb0b32ed33e45b2186b3ffbbec1665b510f5cb674842dddafee9"
+      },
+      {
+        "path": ".agent/safety_check.py",
+        "template": "v2/agent-safety-check.py",
+        "sha256": "8cb1d7489997364f74d919a1f4d6fabd9f5ae6e86b980b86a57e23559e1f51fb"
+      },
+      {
+        "path": ".env.example",
+        "template": "v2/env-example-sensitive",
+        "sha256": "99d5aca5f4219ff29d02df970e8b580017f89008c771dbc28125f6d991e3b7c9"
+      },
+      {
+        "path": ".gitignore",
+        "template": "(generated)",
+        "sha256": "5477c202f9dde2d8a76d51b88053e75b11dd22f2bda39117241948bca28af6fb"
+      },
+      {
+        "path": "AGENTS.md",
+        "template": "v2/agents.md",
+        "sha256": "f9e94f40d4fb37e44de57b8d195c0042759e2c58e13929588b4b7e06347b347e"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "template": "v2/changelog.md",
+        "sha256": "5dcaf73100c15a06abdc99e723b9aa8370249cfed3745a6c990c6745c459e7ba"
+      },
+      {
+        "path": "CLAUDE.md",
+        "template": "v2/pointer-claude.md",
+        "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+      },
+      {
+        "path": "GEMINI.md",
+        "template": "v2/pointer-gemini.md",
+        "sha256": "259b986b3a04c93d351dddd18e09817e8494d4dac3270231de455319dca72f38"
+      },
+      {
+        "path": "PROJECT_SPEC.md",
+        "template": "v2/project-spec.md",
+        "sha256": "49ab36fd17abb6c3a6292c5f6f2b6fdca357aa0c1af4e0dffa759c0b3f6ee4a2"
+      },
+      {
+        "path": "README.md",
+        "template": "v2/readme.md",
+        "sha256": "1e3b77c4191bab878575c6937fb417d1710546747751865e7e98fc8e8ade3663"
+      },
+      {
+        "path": "assets/.gitkeep",
+        "template": "(generated)",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "docs/developer/README.md",
+        "template": "v2/docs-developer.md",
+        "sha256": "aa91311ce872aff4a0f4f39768c4edcbb8b4ac897686b952823669345bc97cc3"
+      },
+      {
+        "path": "docs/developer/configuration.md",
+        "template": "v2/configuration.md",
+        "sha256": "239c7e7857482a3529ac57ff56f09aaa9c16b5d0bbf2680a35d0e216770f9062"
+      },
+      {
+        "path": "docs/developer/sitemap.md",
+        "template": "v2/cat-website-sitemap.md",
+        "sha256": "cf17014ca7c9f43fab74d1e06de7021c18d280a005d5e07850411c1d330ad168"
+      },
+      {
+        "path": "docs/user/README.md",
+        "template": "v2/docs-user.md",
+        "sha256": "be309302ad5dbe29db7f7b018fc11f6b5b99a71ce35a1f554d1909b0bf10824a"
+      },
+      {
+        "path": "eslint.config.mjs",
+        "template": "v2/lint-eslint.mjs",
+        "sha256": "c03c32b6cf9c06158146abc0bfb2e1ac1b46a42cf2ce897341ce70b7091db519"
+      },
+      {
+        "path": "local/README.md",
+        "template": "v2/local-readme.md",
+        "sha256": "b58b7cae48366dc3c00da069d8c0047d8d5b75e93eb29c62b019248a2bc46753"
+      },
+      {
+        "path": "package.json",
+        "template": "v2/lint-node-package.json",
+        "sha256": "766e3f6b394fcb8d5a447ba7b879c4a0069bcf43181d30a1de58a0355a286e76"
+      },
+      {
+        "path": "src/.gitkeep",
+        "template": "(generated)",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "tests/.gitkeep",
+        "template": "(generated)",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "managed_blocks": []
+  }
+}
