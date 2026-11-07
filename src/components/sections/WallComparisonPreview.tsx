@@ -236,7 +236,7 @@ function FrameshelfWallView() {
               decoding="async"
               className="mini-card__img"
             />
-            <span className="mini-card__badge mini-card__badge--type">PNG · 24 fps</span>
+            <span className="mini-card__badge mini-card__badge--type">Image</span>
           </div>
           <div className="mini-card__info">
             <span className="mini-card__name">walk_cycle.png</span>
